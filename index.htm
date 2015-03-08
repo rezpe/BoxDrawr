@@ -27,7 +27,14 @@
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="boxDrawr.js"></script>
   <script>
+    $(document).ready(function(){
+        $drawr = createBoxDrawr(600,600).appendTo("#container")
+
+    $drawr.bind("endbox",function(){
+        console.log("Box Drawn")
+    })
     
+})
   </script>
 </body>
 </html>
